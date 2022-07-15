@@ -21,9 +21,10 @@ function drawSquares(squares) {
 }
 //add class on hover
 function hover(boxes) {
+  let randomColor = Math.floor(Math.random() * 16777215).toString(16);
   boxes.forEach((boxes) => {
     boxes.addEventListener("mouseover", () => {
-      boxes.classList.add("black");
+      boxes.style.cssText = `background-color: #${randomColor}`;
     });
   });
 }
