@@ -1,20 +1,20 @@
 body {
-  background-color: rgb(196, 196, 196);
-}
-
-#container {
-  background-color: grey;
-  display: inline-grid;
-  grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
-}
-
-.box {
-  width: 10px;
-  height: 10px;
-  background-color: red;
-  outline: 1px solid black;
-}
-
-.black {
-  background-color: black;
-}
+    background-color: rgb(196, 196, 196);
+  }
+  
+  #container {
+    background-color: grey;
+    display: inline-grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
+  }
+  
+  .box {
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    outline: 1px solid black;
+  }
+  
+  .black {
+    background-color: black;
+  }
