@@ -1,10 +1,13 @@
 body {
   background-color: rgb(196, 196, 196);
 }
-
+#container {
+  width: 300px;
+  height: 300px;
+}
 .box {
-  width: 10px;
-  height: 10px;
-  background-color: red;
-  outline: 1px solid black;
+  width: 100%;
+  height: auto;
+  background-color: whitesmoke;
+  outline: 1px solid grey;
 }

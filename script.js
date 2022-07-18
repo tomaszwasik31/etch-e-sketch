@@ -21,10 +21,21 @@ function drawSquares(squares) {
 }
 //add class on hover
 function hover(boxes) {
-  let randomColor = Math.floor(Math.random() * 16777215).toString(16);
   boxes.forEach((boxes) => {
-    boxes.addEventListener("mouseover", () => {
-      boxes.style.cssText = `background-color: #${randomColor}`;
+    //random color
+    //let color = Math.floor(Math.random() * 16777215).toString(16);
+
+    boxes.count = 0;
+
+    boxes.addEventListener("mouseover", (e) => {
+      //random color
+      //boxes.style.cssText = `background-color: #${color}`;
+
+      e.target.count += 10;
+      //black progressing opacity
+      boxes.style.cssText = `background-color: rgba(80, 80, 80, ${
+        3 * e.target.count
+      }%);`;
     });
   });
 }
